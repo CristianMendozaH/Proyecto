@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Carga de fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Pre-carga de archivos CSS para una mejora de rendimiento -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Enlace a archivos CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a class="titulo" href="index.html">Estudio del MRU y MRUV</a></h1>
+        <!-- Asegurarse de que las rutas a las imágenes sean relativas y no comiencen con una barra, lo cual las haría absolutas desde la raíz -->
+        <img src="img/Logo de la mariano.png" alt="Logo de la universidad" class="Logo">
+    </header>
+    <section class="menu-container">
+        <article>
+        <h2 class="tituloCalculo">Menú de Temas</h2>
+        <nav>
+            <ul>
+                <!-- Corrección de las rutas a los archivos HTML en subdirectorios -->
+                <li class="resaltar"><a href="pages/MRU.html">->Movimiento Rectilíneo Uniforme (MRU)</a></li>
+                <li class="resaltar"><a href="pages/MRUV.html">->Movimiento Rectilíneo Uniformemente Variado (MRUV)</a></li>
+            </ul>
+            <br>
+            <!-- Corrección de la ruta de imagen para consistencia -->
+            <img src="img/Logo de la mariano.png" alt="Logo de la Universidad" class="LogoP">
+        </nav>
+        </article>
+    </section>
+
+<!--------------------------footer-------------------------->
+    <footer>
+        <h1>Cristian Daniel Mendoza Hernández</h1>
+        <h2>2290-21-20201</h2>
+        <p>Ingeniería en Sistemas - Universidad Mariano Gálvez de Sololá</p>
+    </footer>
+</body>
+<!---------------------------------------fin pie de pagina--------------------------------------->
+</html>

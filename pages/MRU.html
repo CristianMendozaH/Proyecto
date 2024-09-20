@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movimiento Rectilíneo Uniforme (MRU)</h1>
+        <a href="../index.html"><img src="../img/exit.png" alt="Logo de la universidad" class="Logo"></a>
+    </header>
+
+    <section>
+        <h2 class="tituloCalculo">Cálculo para MRU</h2>
+        <p>En física, un movimiento es rectilíneo uniforme cuando un «objeto» (por ejemplo) viaja en una trayectoria recta a una velocidad constante,1​ dado que su aceleración es nula.2​El movimiento rectilíneo uniforme se designa frecuentemente con el acrónimo MRU, aunque en algunos países se denomina como MRC, por movimiento rectilíneo constante</p>
+        <br>
+        <!-- Contenedor de Formularios en Grid -->
+        <article class="grid-container">
+            <!-- Cálculo de Velocidad -->
+            <form id="form-mru-velocidad">
+                <h3 class="formTitulo">Movimiento</h3>
+                <p>En física, el movimiento es un cambio de la posición de un cuerpo a lo largo del tiempo respecto de un sistema de referencia. El estudio del movimiento se puede realizar a través de la cinemática o a través de la dinámica. En función de la elección del sistema de referencia quedarán definidas las ecuaciones del movimiento, ecuaciones que determinarán la posición, la velocidad y la aceleración del cuerpo en cada instante de tiempo.</p>
+                <br>
+                <img src="../img/Movimiento.png" alt="">
+                <br>    
+                <br>
+                <label for="distancia-vel">Distancia (m):</label>
+                <input type="number" id="distancia-vel" required>
+                <label for="tiempo-vel">Tiempo (s):</label>
+                <input type="number" id="tiempo-vel" required>
+                <button type="button" onclick="calcularVelocidad()">Calcular Velocidad</button>
+                <p id="resultado-velocidad"></p>
+            </form>
+
+            <!-- Cálculo de Tiempo -->
+            <form id="form-mru-tiempo">
+                <h3 class="formTitulo">Tiempo</h3>
+                <p>El tiempo es una magnitud física con la que medimos la duración o separación de acontecimientos. El tiempo permite ordenar los sucesos en secuencias. Dados dos eventos puntuales E1 y E2, que ocurren respectivamente en dos coordenadas temporales t1 y t2, y en puntos del espacio diferentes P1 y P2, todas las teorías físicas admiten que estos pueden cumplir una y solo una de las siguientes tres condiciones:</p>
+                <br>
+                <img src="../img/Tiempo.png" alt="">
+                <br> 
+                <br>
+                <label for="distancia-tmp">Distancia (m):</label>
+                <input type="number" id="distancia-tmp" required>
+                <label for="velocidad-tmp">Velocidad (m/s):</label>
+                <input type="number" id="velocidad-tmp" required>
+                <button type="button" onclick="calcularTiempo()">Calcular Tiempo</button>
+                <p id="resultado-tiempo"></p>
+            </form>
+
+            <!-- Cálculo de Distancia -->
+            <form id="form-mru-distancia">
+                <h3 class="formTitulo">Distancia</h3>
+                <p>El espacio físico es el lugar donde se encuentran los entes materiales. El espacio físico es habitualmente concebido con tres dimensiones lineales, aunque los físicos modernos usualmente lo consideran, con el tiempo, como una parte de un infinito continuo de cuatro dimensiones conocido como espacio-tiempo, que en presencia de materia es curvo. La posición de un móvil se define como la variable de estado que proporciona una descripción geométrica definida en un instante dt determinado con respecto a un lugar geométrico descrito por el espectador. Así, se puede utilizar un sistema de coordenadas ortogonales, cilíndricas o esféricas para describir la posición de un cuerpo.</p>
+                <br>
+                <img src="../img/Distancia m.png" alt="">
+                <br> 
+                <br>    
+                <label for="velocidad-dist">Velocidad (m/s):</label>
+                <input type="number" id="velocidad-dist" required>
+                <label for="tiempo-dist">Tiempo (s):</label>
+                <input type="number" id="tiempo-dist" required>
+                <button type="button" onclick="calcularDistancia()">Calcular Distancia</button>
+                <p id="resultado-distancia"></p>
+            </form>
+        </article>
+    </section>
+
+<!--------------------------footer-------------------------->
+    <footer>
+        <h1>Cristian Daniel Mendoza Hernández</h1>
+        <h2>2290-21-20201</h2>
+        <p>Ingeniería en Sistemas - Universidad Mariano Gálvez de Sololá</p>
+    </footer>
+</body>
+<!---------------------------------------fin pie de pagina--------------------------------------->
+    <script src="../js/codigo.js"></script>
+</body>
+</html>

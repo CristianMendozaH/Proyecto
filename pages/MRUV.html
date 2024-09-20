@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRUV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ajuste de las rutas de los archivos CSS para que sean relativas -->
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movimiento Rectilíneo Uniformemente Variado (MRUV)</h1>
+        <!-- Ajuste de la ruta de la imagen para que sea relativa -->
+        <a href="../index.html"><img src="../img/exit.png" alt="Logo de la universidad" class="Logo"></a>
+    </header>
+
+    <section>
+        <h2 class="tituloCalculo">Cálculo para MRUV</h2>
+        <p>El movimiento rectilíneo uniformemente variado o MRUV es un movimiento que ocurre sobre una línea recta con aceleración constante. En el MRUV la aceleración es constante, nunca va a cambiar, siempre es la misma.</p>
+        <article class="grid-container">
+            <!-- Cálculo de Aceleración -->
+            <form id="form-mruv-aceleracion">
+                <h3 class="formTitulo">Aceleración</h3>
+                <p>La aceleración indica la variación de la velocidad por unidad de tiempo. Por ejemplo, tenemos un auto que parte del reposo (v0 = 0 m/s) y avanza con una aceleración constante de 2 m/s².</p>
+                <br>
+                <!-- Ajuste de la ruta de la imagen para que sea relativa -->
+                <img src="../img/aceleracion.png" alt="">
+                <br><br>
+                <label for="velocidad-inicial">Velocidad Inicial (m/s):</label>
+                <input type="number" id="velocidad-inicial" required>
+                <label for="velocidad-final">Velocidad Final (m/s):</label>
+                <input type="number" id="velocidad-final" required>
+                <label for="tiempo">Tiempo (s):</label>
+                <input type="number" id="tiempo-acel" required>
+                <button type="button" onclick="calcularAceleracion()">Calcular Aceleración</button>
+                <p id="resultado-aceleracion"></p>
+            </form>
+
+            <!-- Cálculo de Distancia -->
+            <form id="form-mruv-distancia">
+                <h3 class="formTitulo">Distancia</h3>
+                <p>La distancia en un Movimiento Rectilíneo Uniformemente Variado (MRUV) se refiere a la medida de la longitud que recorre un objeto en movimiento durante un período de tiempo específico.</p>
+                <br>
+                <!-- Ajuste de la ruta de la imagen para que sea relativa -->
+                <img src="../img/Distancia.png" alt="">
+                <br><br>
+                <label for="velocidad-inicial">Velocidad Inicial (m/s):</label>
+                <input type="number" id="velocidad-inicial-dist" required>
+                <label for="aceleracion">Aceleración (m/s²):</label>
+                <input type="number" id="aceleracion-dist" required>
+                <label for="tiempo">Tiempo (s):</label>
+                <input type="number" id="tiempo-dist" required>
+                <button type="button" onclick="calcularDistanciaMRUV()">Calcular Distancia</button>
+                <p id="resultado-distancia-mruv"></p>
+            </form>
+
+            <!-- Cálculo de Velocidad Final -->
+            <form id="form-mruv-velocidad-final">
+                <h3 class="formTitulo">Velocidad Final</h3>
+                <p>La velocidad final en un Movimiento Rectilíneo Uniformemente Variado (MRUV) es la velocidad que tiene un objeto en un punto específico de su trayectoria cuando experimenta una aceleración constante.</p>
+                <br>
+                <!-- Ajuste de la ruta de la imagen para que sea relativa -->
+                <img src="../img/Velocidad Final.png" alt="">
+                <br><br>
+                <label for="velocidad-inicial">Velocidad Inicial (m/s):</label>
+                <input type="number" id="velocidad-inicial-final" required>
+                <label for="aceleracion">Aceleración (m/s²):</label>
+                <input type="number" id="aceleracion-final" required>
+                <label for="tiempo">Tiempo (s):</label>
+                <input type="number" id="tiempo-final" required>
+                <button type="button" onclick="calcularVelocidadFinal()">Calcular Velocidad Final</button>
+                <p id="resultado-velocidad-final"></p>
+            </form>
+        </article>
+    </section>
+
+    <!-- Ajuste de la ruta del archivo JavaScript para que sea relativa -->
+    <script src="../js/codigo.js"></script>
+
+    <footer>
+        <h1>Cristian Daniel Mendoza Hernández</h1>
+        <h2>2290-21-20201</h2>
+        <p>Ingeniería en Sistemas - Universidad Mariano Gálvez de Sololá</p>
+    </footer>
+</body>
+</html>
